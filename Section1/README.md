@@ -20,7 +20,7 @@ switch (int a = rand() % 10) {
 However, using the assigned value in the same expression after the declaration is not possible:
 
 ```cpp
-while ((int i = foo() < 10) {  // Invalid! This syntax is not supported
+while (int i = foo() < 10) {  // Invalid! This syntax is not supported
     //...
 }
 
